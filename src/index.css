@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --font-family-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-primary: #f97316; /* Orange-500 equivalent */
+  --color-bg: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: white;
+  font-family: var(--font-family-body);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for a tech feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c; /* Darker orange */
+}
+
+/* Technological Grid Background Effect */
+.tech-bg {
+    background-image: 
+        linear-gradient(rgba(249, 115, 22, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 115, 22, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
