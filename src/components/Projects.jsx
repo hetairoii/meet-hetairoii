@@ -61,7 +61,7 @@ const Projects = () => {
     {
       name: "BeLovely1",
       image: belovely1Img, 
-      description: "BeLovely1 es una solución digital creada para transformar la tutoría tradicional en una experiencia dinámica y accesible. Esta robusta aplicación web centraliza herramientas de enseñanza y seguimiento académico, enfocándose en mejorar la retención de conocimientos y la productividad del estudiante. Su propósito fundamental es la formación de niños y adultos en el área de la silvicultura, fomentando el aprendizaje sobre el cuidado y la gestión sostenible de los bosques a través de una plataforma interactiva.",
+      description: "BeLovely1 es una aplicación web personalizable que tiene por fin el sorprender a esa persona que tanto quieres con una experiencia interactiva única. Crea una página especial con tus propias razones para amar, una foto opcional juntos y hasta 100 razones editables, todo presentado de una forma especial para una persona especial.",
       repoUrl: "https://belovely1.netlify.app/"
     }
   ];
