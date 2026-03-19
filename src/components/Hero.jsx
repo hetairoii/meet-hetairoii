@@ -2,8 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Globe3D from './Globe3D';
 import DotPattern from './DotPattern';
+import profileImg from '../assets/foto-perfil.png';
 
-const Hero = ({ showProfileInNavbar, profileImg }) => {
+const Hero = ({ showProfileInNavbar}) => {
   return (
     <section 
       id="hero" 
