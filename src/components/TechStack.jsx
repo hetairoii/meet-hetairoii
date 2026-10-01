@@ -62,7 +62,7 @@ const TechStack = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Stack Tecnológico
+          Tech Stack
         </motion.h2>
 
         {/* MERN Stack */}
