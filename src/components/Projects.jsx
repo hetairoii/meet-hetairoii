@@ -91,9 +91,7 @@ const Projects = () => {
       image: weddingImg,
       description: "Invitación web de una sola página para una boda, pensada para compartirse por WhatsApp. Abre con un sobre animado que inicia la música, e incluye cuenta regresiva, lugar con botón de cómo llegar, programa, código de vestimenta y confirmación de asistencia. 100% estática, hecha con Astro y Tailwind.",
       tech: ["Astro", "Tailwind CSS", "TypeScript"],
-      repos: [
-        { label: "Repositorio", url: "https://github.com/hetairoii/ricardo-genesis-wedding" }
-      ]
+      liveUrl: "https://ricardo-genesis-wedding.netlify.app/"
     },
     {
       name: "Silvitutor",
