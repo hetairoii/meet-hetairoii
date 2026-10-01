@@ -10,7 +10,7 @@ import belovely1Img from '../assets/belovely1-screenshot.png';
 const linkClass =
   "bg-orange-600 text-white px-5 py-2 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-orange-700 flex items-center gap-2 text-sm";
 
-const ProjectCard = ({ name, image, description, tech = [], repos = [], demoUrl }) => {
+const ProjectCard = ({ name, image, description, tech = [], repos = [], liveUrl }) => {
   return (
     <motion.div
       className="group relative bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-orange-500/50 transition-all duration-300 shadow-lg h-full flex flex-col"
@@ -32,9 +32,9 @@ const ProjectCard = ({ name, image, description, tech = [], repos = [], demoUrl 
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-wrap items-center justify-center gap-3 p-4">
-          {demoUrl && (
-            <a href={demoUrl} target="_blank" rel="noopener noreferrer" className={linkClass}>
-              <FiExternalLink /> Ver Demo
+          {liveUrl && (
+            <a href={liveUrl} target="_blank" rel="noopener noreferrer" className={linkClass}>
+              <FiExternalLink /> Ver en vivo
             </a>
           )}
           {repos.map((repo) => (
@@ -74,7 +74,7 @@ const Projects = () => {
       image: universalAcademyImg,
       description: "Plataforma de formación online (LMS) con un sitio público y un campus virtual por roles: estudiantes, tutores y administradores. Incluye cursos con módulos y contenido, evaluaciones con tiempo e intentos, certificados en PDF, foros, conferencias en vivo y reportes. Monorepo con SPA en React y API REST en FastAPI. Más de 185 commits.",
       tech: ["React 19", "TypeScript", "Vite", "FastAPI", "SQLAlchemy", "PostgreSQL"],
-      demoUrl: "https://universal-academy-nine.vercel.app"
+      liveUrl: "https://www.universalacademygroup.com/"
     },
     {
       name: "Arrow con Mango",
@@ -99,14 +99,14 @@ const Projects = () => {
       name: "Silvitutor",
       image: silvitutorImg,
       description: "Silvitutor es una solución digital creada para transformar la tutoría tradicional en una experiencia dinámica y accesible. Esta robusta aplicación web centraliza herramientas de enseñanza y seguimiento académico, enfocándose en mejorar la retención de conocimientos y la productividad del estudiante. Su propósito fundamental es la formación de niños y adultos en el área de la silvicultura, fomentando el aprendizaje sobre el cuidado y la gestión sostenible de los bosques a través de una plataforma interactiva.",
-      demoUrl: "https://silvitutor.netlify.app/"
+      liveUrl: "https://silvitutor.netlify.app/"
     },
     {
       name: "BeLovely1",
       image: belovely1Img,
       description: "BeLovely1 es una aplicación web personalizable que tiene por fin el sorprender a esa persona que tanto quieres con una experiencia interactiva única. Crea una página especial con tus propias razones para amar, una foto opcional juntos y hasta 100 razones editables, todo presentado de una forma especial para una persona especial.",
       tech: ["TypeScript"],
-      demoUrl: "https://belovely1.netlify.app/",
+      liveUrl: "https://belovely1.netlify.app/",
       repos: [
         { label: "Repositorio", url: "https://github.com/hetairoii/belovely1" }
       ]
